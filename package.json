@@ -1,0 +1,38 @@
+{
+  "name": "kkl-docs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "gitbook-plugin-anchor-navigation-ex": "^1.0.11",
+    "gitbook-plugin-editlink": "^1.0.2",
+    "gitbook-plugin-github": "^2.0.0",
+    "gitbook-plugin-include-codeblock": "^3.2.2",
+    "gitbook-plugin-page-footer-ex": "^0.1.2",
+    "gitbook-plugin-prism": "^2.4.0",
+    "gitbook-plugin-sectionx": "^3.1.0",
+    "gitbook-plugin-splitter": "^0.0.8",
+    "gitbook-plugin-toggle-chapters": "^0.0.3"
+  },
+  "devDependencies": {
+    "ssh2": "^0.6.1",
+    "ghooks": "^2.0.2"
+  },
+  "scripts": {
+    "build": "gitbook build",
+    "upload": "node build/upload.js",
+    "upload-gitbook": "npm run build && npm run upload",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@git.mistong.com:10022/fe/kkl-docs.git"
+  },
+  "config": {
+    "ghooks": {
+      "pre-push": "npm run upload-gitbook"
+    }
+  },
+  "author": "",
+  "license": "ISC"
+}

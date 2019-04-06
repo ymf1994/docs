@@ -1,0 +1,40 @@
+{
+  "title": "开课啦·前端文档集",
+  "description": "前端文档集",
+  "language": "en",
+  "plugins": [
+    "github",
+    "editlink",
+    "splitter",
+    "sectionx",
+    "toggle-chapters",
+    "page-footer-ex",
+    "prism",
+    "anchor-navigation-ex",
+    "include-codeblock"
+  ],
+  "pluginsConfig": {
+    "copyright":"kaike.la",
+    "update_label":"update: ",
+    "update_format":"YYYY-MM-DD HH:mm:ss",
+    "anchor-navigation-ex":{
+      "isRewritePageTitle": false
+    },
+    "sectionx": {
+      "tag": "b"
+    },
+    "github": {
+      "url": "http://git.mistong.com/fe/kkl-docs.git"
+    },
+    "editlink": {
+      "base": "http://git.mistong.com/fe/kkl-docs/blob/master/",
+      "label": "编辑本页"
+    },
+    "expandable-chapters":{},
+    "include-codeblock": {
+      "template": "http://git.mistong.com/fe/kkl-ui-school-select/blob/master/README.md",
+      "unindent": true,
+      "theme": "monokai"
+  } 
+  }
+}
